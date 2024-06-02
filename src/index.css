@@ -1,0 +1,13 @@
+:root {
+    --main-bg : #E6CCA9;
+}
+
+
+@font-face {
+    font-family: "CommitMono";
+    src: url(fonts/CommitMono-400-Regular.otf);
+}
+
+.main-bg {
+    background-color: var(--main-bg);
+}
