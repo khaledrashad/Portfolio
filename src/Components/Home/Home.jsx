@@ -1,5 +1,4 @@
 import React from 'react';
-import Particle from '../Particle.jsx/Particle';
 import { ReactTyped } from 'react-typed';
 
 
