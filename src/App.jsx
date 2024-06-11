@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
 import Particle from "./Components/Particle.jsx/Particle";
 import Projects from "./Components/Projects/Projects";
@@ -13,6 +14,7 @@ function App() {
         <Home />
         <About />
         <Projects/>
+        <Contact/>
       </div>
     </>
   );

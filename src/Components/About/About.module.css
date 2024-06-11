@@ -1,6 +1,15 @@
 .leftContainer {
     position: relative;
-    animation: aboutAnimation 1s ease-in;
+    animation: aboutAnimation 3s;
+}
+
+.rightContainer {
+    position: relative;
+    animation: aboutAnimationTop 5s;
+}
+
+.aboutSection {
+    min-height: 40rem;
 }
 
 
@@ -8,27 +17,29 @@
 
 @keyframes aboutAnimation {
     0% {
-        right: 200%;
-    }
-    25% {
-        right: 150%;
-    }
-    50% {
-        right: 100%;
-    }
-    60% {
-        right: 90%;
-    }
-    75% {
-        right: 70%;
-    }
-    85% {
-        right: 50%;
-    }
-    95% {
-        right: 20%;
+        opacity: 0;
+        transform: translate3d(-200%, 0, 0);
+        cursor: pointer;
+        transition: 0.25s all ease-in-out;
     }
     100% {
-        right: 0;
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes aboutAnimationTop {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -200%, 0);
+        cursor: pointer;
+        transition: 0.25s all ease-in-out;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }
